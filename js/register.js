@@ -1,5 +1,5 @@
 let registerForm = document.querySelector('#register-form');
-let url = 'https://3162-89-232-236-182.ngrok-free.app'
+
 
 // обработка формы регистрации
 registerForm.addEventListener('submit', async (e) => {

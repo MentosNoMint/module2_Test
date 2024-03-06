@@ -5,3 +5,19 @@
 #booking{
     display: none;
 }
+
+#login{
+    display: none;
+}
+
+#fromPage , #branches , #profile , #register{
+    display: none;
+}
+
+#backPage {
+    display: none;
+}
+
+#bookingPage{
+    display: none;
+}

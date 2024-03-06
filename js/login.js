@@ -1,10 +1,10 @@
-let registerForm = document.querySelector('#login-form');
-let url = 'https://3162-89-232-236-182.ngrok-free.app'
+let loginForm = document.querySelector('#login-form');
+
 
 // обработка формы логина
-registerForm.addEventListener('submit', async (e) => {
+loginForm.addEventListener('submit', async (e) => {
     e.preventDefault()
-    let formData = new FormData(registerForm);
+    let formData = new FormData(loginForm);
     
     let phone = formData.get('phone');
     let password = formData.get('password');
@@ -15,6 +15,13 @@ registerForm.addEventListener('submit', async (e) => {
         body: JSON.stringify({phone , password})
     })
     let contentLogin = await responseLogin.json()
+    console.log(contentLogin)
 
     localStorage.setItem('AuthToken' , contentLogin.data.token);
 })
+
+
+
+if(localStorage.getItem('AuthToken') == 'null'){
+    
+}
